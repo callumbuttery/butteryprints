@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from '@mdi/react';
 import { mdiMenu } from '@mdi/js';
+import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -29,22 +30,22 @@ export const Navbar: React.FC = () => {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
-                <a className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75">
-                  Home
-                </a>
+                <Link className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75" to={'/'}>
+                   Home
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75">
+                <Link className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75" to='/about'>
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75">
+                <Link className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75" to='/prints'>
                   Prints
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75">
+                <a className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75" href="https://www.butteryphotography.co.uk" target="_blank" rel="noopener noreferrer">
                   Weddings
                 </a>
               </li>
