@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from '@mdi/react';
-import { mdiMenu } from '@mdi/js';
+//import { mdiMenu } from '@mdi/js';
+//<Icon path={mdiMenu} color='black' size={1.5}/>
 import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
@@ -13,11 +14,10 @@ export const Navbar: React.FC = () => {
               B.V
             </a>
             <button
-              className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+              className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-black block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-             <Icon path={mdiMenu} color='black' size={1.5}/>
             </button>
           </div>
           <div
