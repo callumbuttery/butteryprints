@@ -1,5 +1,5 @@
 import me from "../assets/me.jpeg";
-import { InfoCard } from "../components/About/InfoCard";
+import InfoCard from "../components/About/InfoCard";
 
 export const About: React.FC = () => {
   return (
