@@ -1,8 +1,10 @@
 import React from "react";
 import Icon from '@mdi/react';
 //import { mdiMenu } from '@mdi/js';
-import * as mdiMenu from '@mdi/js';
-const menu = (mdiMenu as any).default || mdiMenu;
+import mdiMenu from "@mdi/js";
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+const menu = mdiMenu.default ? mdiMenu.default : mdiMenu;
 import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
