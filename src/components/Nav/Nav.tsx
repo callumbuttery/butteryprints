@@ -1,6 +1,8 @@
 import React from "react";
 import Icon from '@mdi/react';
-import { mdiMenu } from '@mdi/js';
+//import { mdiMenu } from '@mdi/js';
+import * as mdiMenu from '@mdi/js';
+const menu = (mdiMenu as any).default || mdiMenu;
 import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
@@ -17,7 +19,7 @@ export const Navbar: React.FC = () => {
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
-             <Icon path={mdiMenu} color='black' size={1.5}/>
+             <Icon path={menu} color='black' size={1.5}/>
             </button>
           </div>
           <div
