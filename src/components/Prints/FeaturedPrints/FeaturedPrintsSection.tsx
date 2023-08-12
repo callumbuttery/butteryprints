@@ -1,4 +1,4 @@
-export const FeaturedPrints: React.FC = () => {
+export const FeaturedPrintsSection: React.FC = () => {
   return (
     <div>
       <div className="pt-32 font-Montserrat">
@@ -7,6 +7,9 @@ export const FeaturedPrints: React.FC = () => {
           Featured Prints
         </h1>
         <hr className="flex justiy-center w-64 mx-auto"></hr>
+      </div>
+      <div className="Flex justify-center">
+
       </div>
     </div>
   );

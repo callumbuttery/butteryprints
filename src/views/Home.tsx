@@ -1,4 +1,4 @@
-import { FeaturedPrints } from "../components/Prints/FeaturedPrints";
+import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/FeaturedPrintsSection";
 
 export const Home: React.FC = () => {
   return (
@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
         </div>
       </div>
       <div>
-        <FeaturedPrints/>
+        <FeaturedPrintsSection/>
       </div>
     </div>
   );
