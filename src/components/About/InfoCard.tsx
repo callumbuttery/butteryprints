@@ -20,7 +20,7 @@ export default function InfoCard() {
       </div>
 
       <div className="text-center mt-6 pr-10 pl-10 text-2xl text-white font-light max-lg:text-lg pb-10">
-        I am a software Engineer by weekday, wedding photographer by weekend.
+        I am a software Engineer by day, photographer by evening.
         For any commercial opportunities, please reach out to:
         butteryphoto@gmail.com   
       </div>
