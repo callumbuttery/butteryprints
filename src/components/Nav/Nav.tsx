@@ -3,6 +3,7 @@ import Icon from '@mdi/react';
 //import { mdiMenu } from '@mdi/js';
 //<Icon path={mdiMenu} color='black' size={1.5}/>
 import { Link } from "react-router-dom";
+import signature from '../../assets/signature.png'
 
 export const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -10,9 +11,7 @@ export const Navbar: React.FC = () => {
       <nav className="bg-transparent h-24 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-transparent">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a className="text-4xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase">
-              B.V
-            </a>
+            <img className="h-16" src={signature}/>
             <button
               className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-black block lg:hidden outline-none focus:outline-none"
               type="button"
@@ -27,24 +26,24 @@ export const Navbar: React.FC = () => {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto font-Montserrat font-bold">
               <li className="nav-item">
-                <Link className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:scale-125" to={'/'}>
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to={'/'}>
                    Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:scale-125" to='/about'>
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to='/about'>
                   About
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:scale-125" to='/prints'>
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to='/prints'>
                   Prints
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="px-6 py-2 flex items-center text-md uppercase font-bold leading-snug hover:scale-125" href="https://www.butteryphotography.co.uk" target="_blank" rel="noopener noreferrer">
+                <a className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" href="https://www.butteryphotography.co.uk" target="_blank" rel="noopener noreferrer">
                   Weddings
                 </a>
               </li>
