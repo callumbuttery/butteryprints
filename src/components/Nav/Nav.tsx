@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-      <nav className="relative flex flex-wrap items-center justify-between">
+      <nav className="bg-transparent h-24 px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b border-transparent">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <a className="text-4xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase">
