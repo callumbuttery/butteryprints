@@ -1,3 +1,5 @@
+import { FeaturedPrintsCards } from "./FeaturedPrintsCards";
+
 export const FeaturedPrintsSection: React.FC = () => {
   return (
     <div>
@@ -9,7 +11,7 @@ export const FeaturedPrintsSection: React.FC = () => {
         <hr className="flex justiy-center w-64 mx-auto"></hr>
       </div>
       <div className="Flex justify-center">
-
+        <FeaturedPrintsCards />
       </div>
     </div>
   );
