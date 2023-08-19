@@ -3,7 +3,7 @@ import Icon from '@mdi/react';
 //import { mdiMenu } from '@mdi/js';
 //<Icon path={mdiMenu} color='black' size={1.5}/>
 import { Link } from "react-router-dom";
-import signature from '../../assets/signature.png'
+import signature from '../../assets/signaturewhite.png'
 
 export const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
