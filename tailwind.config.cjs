@@ -14,7 +14,7 @@ module.exports = {
         ]
       },
       fontFamily: {
-        Montserrat: ["Montserrat"],
+        montserrat: ["Montserrat"],
       },
     },
   },

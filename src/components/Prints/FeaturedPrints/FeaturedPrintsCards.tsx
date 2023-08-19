@@ -30,16 +30,21 @@ export const FeaturedPrintsCards: React.FC = () => {
         <div className="flex justify-center mt-24 columns-2 sm:columns-1">
           <img
             src={print.src}
-            className="h-64 rounded-lg mr-10 flex justify-center drop-shadow-xl"
+            className="h-64 rounded-lg mr-10 flex justify-center drop-shadow-xl hover:scale-125"
           />
           <div className="inline-block h-[250px] min-h-[1em] w-0.5 bg-gray-100 mr-10"></div>
           <div className="inline-block">
-            <p className="font-bold font-Montserrat text-lg">{print.name}</p>
+            <p className="font-bold font-montserrat text-lg">{print.name}</p>
             <hr className="bg-gray-100 mt-5 mb-5" />
-            <p className="max-w-sm font-Montserrat font-bold text-sm">
+            <p className="max-w-sm font-montserrat font-bold text-sm">
               {print?.description}
             </p>
-            <button type="button"/>
+            <button
+              type="button"
+              className="bg-transparent text-black mt-10 text-sm px-1 py-0.5 border border-gray-400 hover:scale-125 font-montserrat font-bold"
+            >
+              View now
+            </button>
           </div>
         </div>
       ))}
