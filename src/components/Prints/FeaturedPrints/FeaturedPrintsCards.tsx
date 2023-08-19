@@ -17,7 +17,11 @@ export const FeaturedPrintsCards: React.FC = () => {
             className="h-64 rounded-lg mr-10 flex justify-center drop-shadow-xl"
           />
           <div className="inline-block h-[250px] min-h-[1em] w-0.5 bg-gray-100 mr-10"></div>
-          <p>{print.name}</p>
+          <div className="inline-block">
+            <p className="font-bold font-Montserrat">{print.name}</p>
+            <hr className="bg-gray-100 mt-5 mb-5"/>
+            <p>{print.name}</p>
+          </div>
         </div>
       ))}
     </div>
