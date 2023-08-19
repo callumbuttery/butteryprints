@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item hover:text-blue-500">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-white " to={'/'}>
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-white" to={'/'}>
                    Home
                 </Link>
               </li>
