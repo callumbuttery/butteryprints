@@ -26,24 +26,24 @@ export const Navbar: React.FC = () => {
             }
             id="example-navbar-danger"
           >
-            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto font-montserrat font-bold">
-              <li className="nav-item hover:text-white">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to={'/'}>
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li className="nav-item hover:text-blue-500">
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-white " to={'/'}>
                    Home
                 </Link>
               </li>
-              <li className="nav-item hover:text-white">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to='/about'>
+              <li className="nav-item hover:text-blue-500">
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-white" to='/about'>
                   About
                 </Link>
               </li>
-              <li className="nav-item hover:text-white">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to='/prints'>
+              <li className="nav-item hover:text-blue-500">
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-white" to='/prints'>
                   Prints
                 </Link>
               </li>
-              <li className="nav-item hover:text-white">
-                <a className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" href="https://www.butteryphotography.co.uk" target="_blank" rel="noopener noreferrer">
+              <li className="nav-item hover:text-blue-500">
+                <a className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-white" href="https://www.butteryphotography.co.uk" target="_blank" rel="noopener noreferrer">
                   Weddings
                 </a>
               </li>
