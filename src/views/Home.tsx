@@ -1,4 +1,5 @@
 import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/FeaturedPrintsSection";
+import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
 
 export const Home: React.FC = () => {
   return (
@@ -17,6 +18,9 @@ export const Home: React.FC = () => {
               Photographer
             </h2>
           </div>
+        </div>
+        <div className="absolute inset-x-0 bottom-0">
+          <ScrollAnimator />
         </div>
       </div>
       <div>
