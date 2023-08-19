@@ -8,6 +8,7 @@ import { About } from './views/About'
 import { Home } from './views/Home'
 import { Prints } from './views/Prints'
 import { Navbar } from "./components/Nav/Nav";
+import { Footer } from "./components/Nav/Footer";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="/prints" element={<Prints />} />
         </Routes>
       </Router>
+      <Footer />
     </div>
   );
 }
