@@ -12,7 +12,7 @@ export const About: React.FC = () => {
             data-aos-duration="1000"
             className="absolute left-16 lg:left-48 top-64 text-4xl w-2/6 max-lg:text-3xl font-montserrat"
           >
-            <h1 className="tracking-widest text-gray-200 drop-shadow-2xl font-bold">
+            <h1 className="tracking-widest text-white drop-shadow-2xl">
               The man behind the camera...
             </h1>
           </div>
