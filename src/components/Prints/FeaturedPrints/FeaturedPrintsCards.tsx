@@ -26,11 +26,12 @@ export const FeaturedPrintsCards: React.FC = () => {
 
   return (
     <div className="pb-10">
-      {prints.map((print) => (
+      {prints.map((print, i) => (
         <div
           className="flex justify-center mt-24 columns-2 sm:columns-1"
           data-aos="fade-left"
           data-aos-duration="1000"
+          key={i}
         >
           <img
             src={print.src}

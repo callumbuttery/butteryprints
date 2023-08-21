@@ -21,12 +21,13 @@ export const PortfolioHome: React.FC = () => {
   return (
     <div className="h-screen">
       <div className="flex justify-center items-center mt-64 columns-2 gap-20 drop-shadow-3xl font-montserrat font-bold">
-        {portfolios.map((portfolio) => (
+        {portfolios.map((portfolio, i) => (
           <div
             className="inline-block cursor-pointer"
             data-aos="fade-down"
             data-aos-duration="1000"
             onClick={() => navigate(portfolio.navigate)}
+            key={i}
           >
             <h1 className="flex justify-center text-2xl pb-5">{portfolio.heading}</h1>
             <img
