@@ -5,14 +5,15 @@ import headshot3 from "../../assets/headshots/unnamed.jpg";
 export const StoryCard: React.FC = () => {
   return (
     <div>
-      <div className="columns-2 flex justify-center mt-16 max-w-5xl mx-auto">
-        <img src={headshot1} className="h-96 mr-10 rounded" />
+      <div className="columns-2 flex justify-center mt-32 max-w-5xl mx-auto" data-aos="fade-left"
+        data-aos-duration="1000">
+        <img src={headshot1} className="h-96 mr-10 rounded drop-shadow-2xl" />
         <div className="ml-10 inline-block max-w-2xl text-blue-500">
           <div className="text-4xl font-montserrat text-black">Where it all began...</div>
           <p className="mt-10 font-monserrat text-gray-500">
             My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years,
             is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
-            all types of british wildlife.
+            all types of British wildlife.
             <br />
             <br />
             The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
@@ -20,25 +21,28 @@ export const StoryCard: React.FC = () => {
           </p>
         </div>
       </div>
-      <div className="columns-2 flex justify-center mt-16 max-w-5xl mx-auto">
+      <div className="columns-2 flex justify-center mt-32 max-w-5xl mx-auto" data-aos="fade-right"
+        data-aos-duration="1000">
         <div className="mr-10 inline-block max-w-2xl text-blue-500">
-          <div className="text-4xl font-montserrat text-black">Where it all began...</div>
+          <div className="text-4xl font-montserrat text-black">...The story to date...</div>
           <p className="mt-10 font-monserrat text-gray-500">
-            My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years,
-            is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
-            all types of british wildlife.
+            Graduating from high school in 2016, I had a year out to decide what I wanted to do with my life. One day, while looking for something to do,
+            I picked up my dad's camera and took it for a spin. Over the following weeks I found my addictive personality take over as I waded into 
+            the world of photography, I was hooked pretty quickly.
             <br />
             <br />
-            The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
-            everything from foxes to finches using his skills and experience. The vast majority of my wildife knowledge, I have inherited from him.
+            I first started off in the world of landscape photography to learn the craft of using a camera. Since then I have explored all different types
+            of photography, however wildife photography is where my heart is. The thill of sitting within a few meters of a truly wild animal is a feeling
+            the world has lost to the history books - few get to experience it in this modern world.
           </p>
         </div>
-        <img src={headshot2} className="h-96 ml-10 rounded" />
+        <img src={headshot2} className="h-96 ml-10 rounded drop-shadow-2xl" />
       </div>
-      <div className="columns-2 flex justify-center mt-16 max-w-5xl mx-auto">
-        <img src={headshot3} className="h-96 mr-10 rounded" />
+      <div className="columns-2 flex justify-center mt-32 max-w-5xl mx-auto" data-aos="fade-left"
+        data-aos-duration="1000">
+        <img src={headshot3} className="h-96 mr-10 rounded drop-shadow-2xl" />
         <div className="ml-10 inline-block max-w-2xl text-blue-500">
-          <div className="text-4xl font-montserrat text-black">Where it all began...</div>
+          <div className="text-4xl font-montserrat text-black">...Where it's going</div>
           <p className="mt-10 font-monserrat text-gray-500">
             My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years,
             is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
