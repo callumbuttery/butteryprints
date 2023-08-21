@@ -1,21 +1,53 @@
-import headshot1 from "../../assets/headshots/unnamed (2).jpg";
+import headshot1 from "../../assets/headshots/unnamed (1).jpg";
+import headshot2 from "../../assets/headshots/unnamed (2).jpg";
+import headshot3 from "../../assets/headshots/unnamed.jpg";
 
 export const StoryCard: React.FC = () => {
   return (
     <div>
       <div className="columns-2 flex justify-center mt-16 max-w-5xl mx-auto">
-        <img src={headshot1} className="h-96" />
+        <img src={headshot1} className="h-96 mr-10 rounded" />
         <div className="ml-10 inline-block max-w-2xl text-blue-500">
-            <div className="text-4xl font-montserrat text-black">Where it all began...</div>
-            <p className="mt-10 font-monserrat text-gray-500">
-              My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years, 
-              is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
-              all types of british wildlife.
-              <br/>
-              <br/>
-              The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
-              everything from foxes to finches using his skills and experience. The vast majority of my wildife knowledge, I have inherited from him.
-            </p>
+          <div className="text-4xl font-montserrat text-black">Where it all began...</div>
+          <p className="mt-10 font-monserrat text-gray-500">
+            My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years,
+            is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
+            all types of british wildlife.
+            <br />
+            <br />
+            The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
+            everything from foxes to finches using his skills and experience. The vast majority of my wildife knowledge, I have inherited from him.
+          </p>
+        </div>
+      </div>
+      <div className="columns-2 flex justify-center mt-16 max-w-5xl mx-auto">
+        <div className="mr-10 inline-block max-w-2xl text-blue-500">
+          <div className="text-4xl font-montserrat text-black">Where it all began...</div>
+          <p className="mt-10 font-monserrat text-gray-500">
+            My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years,
+            is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
+            all types of british wildlife.
+            <br />
+            <br />
+            The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
+            everything from foxes to finches using his skills and experience. The vast majority of my wildife knowledge, I have inherited from him.
+          </p>
+        </div>
+        <img src={headshot2} className="h-96 ml-10 rounded" />
+      </div>
+      <div className="columns-2 flex justify-center mt-16 max-w-5xl mx-auto">
+        <img src={headshot3} className="h-96 mr-10 rounded" />
+        <div className="ml-10 inline-block max-w-2xl text-blue-500">
+          <div className="text-4xl font-montserrat text-black">Where it all began...</div>
+          <p className="mt-10 font-monserrat text-gray-500">
+            My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years,
+            is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
+            all types of british wildlife.
+            <br />
+            <br />
+            The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
+            everything from foxes to finches using his skills and experience. The vast majority of my wildife knowledge, I have inherited from him.
+          </p>
         </div>
       </div>
     </div>
