@@ -1,4 +1,4 @@
-import landscapePlaceHolder from "../../assets/portfolio/IMG_0243.png";
+import landscapePlaceHolder from "../../assets/portfolio/IMG_0243.jpg";
 import wildlifePlaceHolder from "../../assets/portfolio/IMG_9098-AI.jpg";
 import { useNavigate } from "react-router-dom";
 
