@@ -6,7 +6,9 @@ import 'aos/dist/aos.css';
 
 import { About } from './views/About'
 import { Home } from './views/Home'
-import { Portfolio } from './views/Portfolio'
+import { PortfolioHome } from './views/portfolios/PortfolioHome'
+import { PortfolioWildlife } from "./views/portfolios/PortfolioWildlife";
+
 import { Prints } from './views/Prints'
 import { Navbar } from "./components/Nav/Nav";
 import { Footer } from "./components/Nav/Footer";
@@ -24,7 +26,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio" element={<PortfolioHome />} />
+          <Route path="/portfolioWildlife" element={<PortfolioWildlife />} />
           <Route path="/prints" element={<Prints />} />
         </Routes>
       </Router>
