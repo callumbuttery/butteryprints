@@ -8,6 +8,7 @@ import { About } from './views/About'
 import { Home } from './views/Home'
 import { PortfolioHome } from './views/portfolios/PortfolioHome'
 import { PortfolioWildlife } from "./views/portfolios/PortfolioWildlife";
+import { PortfolioLandscape } from "./views/portfolios/PortfolioLandscapes";
 
 import { Prints } from './views/Prints'
 import { Navbar } from "./components/Nav/Nav";
@@ -28,6 +29,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<PortfolioHome />} />
           <Route path="/portfolioWildlife" element={<PortfolioWildlife />} />
+          <Route path="/portfolioLandscape" element={<PortfolioLandscape />} />
           <Route path="/prints" element={<Prints />} />
         </Routes>
       </Router>

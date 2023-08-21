@@ -12,7 +12,7 @@ export const PortfolioHome: React.FC = () => {
           className="inline-block cursor-pointer"
           data-aos="fade-right"
           data-aos-duration="1000"
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/portfolioLandscape')}
         >
           <h1 className="flex justify-center text-2xl pb-5">Landscapes</h1>
           <img
