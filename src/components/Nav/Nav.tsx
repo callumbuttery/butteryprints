@@ -27,28 +27,28 @@ export const Navbar: React.FC = () => {
             id="example-navbar-danger"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-              <li className="nav-item hover:text-blue-500">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-black" to={'/'}>
+              <li className="nav-item hover:text-white">
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to={'/'}>
                    Home
                 </Link>
               </li>
-              <li className="nav-item hover:text-blue-500">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-black" to='/about'>
+              <li className="nav-item hover:text-white">
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to='/about'>
                   BIOGRAPHY
                 </Link>
               </li>
-              <li className="nav-item hover:text-blue-500">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-black" to='/portfolio'>
+              <li className="nav-item hover:text-white">
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to='/portfolio'>
                   Portfolio
                 </Link>
               </li>
-              <li className="nav-item hover:text-blue-500">
-                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-black" to='/prints'>
+              <li className="nav-item hover:text-white">
+                <Link className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" to='/prints'>
                   Prints
                 </Link>
               </li>
-              <li className="nav-item hover:text-blue-500">
-                <a className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125 text-black" href="https://www.butteryphotography.co.uk" target="_blank" rel="noopener noreferrer">
+              <li className="nav-item hover:text-white">
+                <a className="px-6 py-2 flex items-center text-md uppercase leading-snug hover:scale-125" href="https://www.butteryphotography.co.uk" target="_blank" rel="noopener noreferrer">
                   Weddings
                 </a>
               </li>
