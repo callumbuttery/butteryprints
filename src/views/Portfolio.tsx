@@ -6,21 +6,21 @@ export const Portfolio: React.FC = () => {
     <div className="h-screen">
       <div className="flex justify-center items-center mt-64 columns-2 gap-20 drop-shadow-3xl font-montserrat font-bold">
         <div
-          className="inline-block hover:scale-125"
+          className="inline-block"
           data-aos="fade-right"
           data-aos-duration="1000"
         >
           <h1 className="flex justify-center text-2xl pb-5">Landscapes</h1>
-          <img src={landscapePlaceHolder} className=" flex h-96 rounded-xl" />
+          <img src={landscapePlaceHolder} className=" flex h-96 rounded-xl hover:scale-125" />
         </div>
         <div
-          className="inline-block hover:scale-125"
+          className="inline-block"
           data-aos="fade-left"
           data-aos-duration="1000"
         >
           <a>
             <h1 className="flex justify-center text-2xl pb-5">Wildlife</h1>
-            <img src={wildlifePlaceHolder} className="flex h-96 rounded-xl" />
+            <img src={wildlifePlaceHolder} className="flex h-96 rounded-xl hover:scale-125" />
           </a>
         </div>
       </div>
