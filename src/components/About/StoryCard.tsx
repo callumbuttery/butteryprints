@@ -27,7 +27,7 @@ export const StoryCard: React.FC = () => {
           <div className="text-4xl font-montserrat text-black">...The story to date...</div>
           <p className="mt-10 font-monserrat text-gray-500">
             Graduating from high school in 2016, I had a year out to decide what I wanted to do with my life. One day, while looking for something to do,
-            I picked up my dad's camera and took it for a spin. Over the following weeks I found my addictive personality take over as I waded into 
+            I picked up my dad's camera and took it for a spin. Over the following weeks I found my addictive personality take over as I waded into
             the world of photography, I was hooked pretty quickly.
             <br />
             <br />
@@ -42,15 +42,14 @@ export const StoryCard: React.FC = () => {
         data-aos-duration="1000">
         <img src={headshot3} className="h-96 mr-10 rounded drop-shadow-2xl" />
         <div className="ml-10 inline-block max-w-2xl text-blue-500">
-          <div className="text-4xl font-montserrat text-black">...Where it's going</div>
+          <div className="text-4xl font-montserrat text-black">...The journey ahead</div>
           <p className="mt-10 font-monserrat text-gray-500">
-            My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years,
-            is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
-            all types of british wildlife.
+            From late 2023 onwards, I will be looking at expanding my horizons both in both adventures and business. My main goal is to get my work out
+            there for the world to see, my website print store is one way to do this, however I also want to sell physical prints to people in person.
+            As for the world of adventures, I still have loads of Scotland to see.
             <br />
             <br />
-            The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
-            everything from foxes to finches using his skills and experience. The vast majority of my wildife knowledge, I have inherited from him.
+            “Because in the end, you won't remember the times you spent in the office or mowing your lawn. Climb that goddamn mountain.” - Jack Kerouac
           </p>
         </div>
       </div>
