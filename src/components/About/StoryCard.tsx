@@ -11,6 +11,10 @@ export const StoryCard: React.FC = () => {
               My passion for wildlife & nature was instilled in me at a young age. I was fortunate enough that the house I grew up & lived in for 25 years, 
               is on the edge of farm land. Miles upon miles of open fields, meadows, hedgerows and woodlands to explore, the perfect recipe for encountering
               all types of british wildlife.
+              <br/>
+              <br/>
+              The other fortunate factor I had was my Dad. A man who grew up even closer to wildlife than I did. Over the years, I've watched him call in
+              everything from foxes to finches using his skills and experience. The vast majority of my wildife knowledge, I have inherited from him.
             </p>
         </div>
       </div>
