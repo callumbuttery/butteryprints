@@ -13,17 +13,19 @@ import { PortfolioLandscape } from "./views/portfolios/PortfolioLandscapes";
 import { Prints } from './views/Prints'
 import { Navbar } from "./components/Nav/Nav";
 import { Footer } from "./components/Nav/Footer";
+import { ScrollToTop } from "./components/Nav/ScrollToTop";
 
 function App() {
 
   useEffect(() => {
     setTimeout(function () { AOS.init(); }, 1000);
   }, [])
-  
+
   return (
     <div className="App">
       <Router>
-      <Navbar/>
+        <ScrollToTop />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
