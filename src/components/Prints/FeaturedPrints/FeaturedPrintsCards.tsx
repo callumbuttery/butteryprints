@@ -35,7 +35,7 @@ export const FeaturedPrintsCards: React.FC = () => {
         >
           <img
             src={print.src}
-            className="h-64 rounded-lg mr-10 flex justify-center drop-shadow-xl hover:scale-125"
+            className="h-64 rounded-lg mr-10 flex justify-center drop-shadow-xl hover:scale-125 pointer-events-none"
           />
           <div className="inline-block h-[250px] min-h-[1em] w-0.5 bg-gray-100 mr-10"></div>
           <div className="inline-block">

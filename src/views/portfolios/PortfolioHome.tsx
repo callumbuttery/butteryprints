@@ -32,7 +32,7 @@ export const PortfolioHome: React.FC = () => {
             <h1 className="flex justify-center text-2xl pb-5">{portfolio.heading}</h1>
             <img
               src={portfolio.src}
-              className=" flex h-96 rounded-xl hover:scale-125"
+              className=" flex h-96 rounded-xl hover:scale-125 pointer-events-none"
             />
           </div>
         ))}

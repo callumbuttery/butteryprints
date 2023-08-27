@@ -10,7 +10,7 @@ export const FeaturedPrintsSection: React.FC = () => {
         </h1>
         <hr className="flex justiy-center w-64 mx-auto"></hr>
       </div>
-      <div className="Flex justify-center">
+      <div className="flex justify-center">
         <FeaturedPrintsCards />
       </div>
     </div>
