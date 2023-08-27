@@ -7,12 +7,12 @@ export const PortfolioHome: React.FC = () => {
 
   const portfolios = [
     {
-      navigate: "portfolioLandscape",
+      navigate: "landscapes",
       heading: "Landscapes",
       src: landscapePlaceHolder,
     },
     {
-      navigate: "portfolioWildlife",
+      navigate: "wildlife",
       heading: "Wildlife",
       src: wildlifePlaceHolder,
     },

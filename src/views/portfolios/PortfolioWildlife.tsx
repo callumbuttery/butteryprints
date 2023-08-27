@@ -1,7 +1,9 @@
 export const PortfolioWildlife: React.FC = () => {
     return (
-        <div className="text-4xl">
-            test
+        <div>
+            <div className="mt-24">
+                Test
+            </div>
         </div>
     )
 }
