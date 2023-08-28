@@ -20,20 +20,20 @@ export const PortfolioHome: React.FC = () => {
 
   return (
     <div className="h-screen">
-      <div className="flex justify-center items-center mt-64 columns-2 gap-20 drop-shadow-3xl font-montserrat font-bold">
+      <div className="grid grid-cols-2 mt-64 drop-shadow-3xl font-montserrat font-bold w-3/6 mx-auto max-lg:grid-cols-1">
         {portfolios.map((portfolio, i) => (
           <div
-            className="inline-block cursor-pointer"
+            className="cursor-pointer mx-auto"
             data-aos="fade-down"
             data-aos-duration="1000"
             onClick={() => navigate(portfolio.navigate)}
             key={i}
           >
-            <h1 className="flex justify-center text-2xl pb-5">{portfolio.heading}</h1>
             <img
               src={portfolio.src}
-              className=" flex h-96 rounded-xl hover:scale-125 pointer-events-none"
+              className="h-96 rounded-xl hover:scale-125 pointer-events-none inline-block"
             />
+            <h1 className="text-2xl pb-5 text-center mt-5">{portfolio.heading}</h1>
           </div>
         ))}
       </div>
