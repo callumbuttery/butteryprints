@@ -28,16 +28,15 @@ export const FeaturedPrintsCards: React.FC = () => {
     <div className="pb-10">
       {prints.map((print, i) => (
         <div
-          className="flex justify-center mt-24 columns-2 sm:columns-1"
+          className="mt-24 grid grid-cols-2 max-md:grid-cols-1"
           data-aos="fade-left"
           data-aos-duration="1000"
           key={i}
         >
           <img
             src={print.src}
-            className="h-64 rounded-lg mr-10 flex justify-center drop-shadow-xl hover:scale-125 pointer-events-none"
+            className="h-64 rounded-lg mr-10 drop-shadow-xl hover:scale-125 pointer-events-none max-md:mb-5"
           />
-          <div className="inline-block h-[250px] min-h-[1em] w-0.5 bg-gray-100 mr-10"></div>
           <div className="inline-block">
             <p className="font-bold font-montserrat text-lg">{print.name}</p>
             <hr className="bg-gray-100 mt-5 mb-5" />
