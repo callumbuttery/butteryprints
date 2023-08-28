@@ -13,7 +13,7 @@ export const Navbar: React.FC = () => {
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <img className="h-16" src={signature}/>
             <button
-              className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-black block lg:hidden outline-none focus:outline-none"
+              className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-gray-500 block lg:hidden outline-none focus:outline-none"
               type="button"
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
