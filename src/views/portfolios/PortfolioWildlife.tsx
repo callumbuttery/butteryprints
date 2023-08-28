@@ -38,7 +38,7 @@ export const PortfolioWildlife: React.FC = () => {
   return (
     <div className="mt-24 flex justify-center">
       <div
-        className="grid grid-cols-4 gap-8"
+        className="grid grid-cols-4 gap-8 max-lg:grid-cols-2 max-md:grid-cols-1"
         data-aos="fade-up"
         data-aos-duration="1000"
       >
