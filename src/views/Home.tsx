@@ -9,7 +9,7 @@ export const Home: React.FC = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="absolute left-16 lg:left-48 top-64 text-4xl w-full max-lg:text-3xl font-montserrat"
+            className="absolute left-16 lg:left-48 top-96 text-4xl w-full max-lg:text-3xl font-montserrat"
           >
             <h1 className="tracking-widest text-gray-200 drop-shadow-2xl font-bold">
               Callum Buttery
