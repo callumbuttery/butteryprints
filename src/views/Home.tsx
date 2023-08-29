@@ -9,8 +9,14 @@ export const Home: React.FC = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="text-4xl w-full max-lg:text-3xl font-montserrat"
+            className="absolute left-16 lg:left-48 top-64 text-4xl w-full max-lg:text-3xl font-montserrat"
           >
+            <h1 className="tracking-widest text-gray-200 drop-shadow-2xl font-bold">
+              Callum Buttery
+            </h1>
+            <h2 className="mt-2 tracking-widest opacity-50 text-gray-200 drop-shadow-2xl">
+              Photographer
+            </h2>
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0">
@@ -18,7 +24,7 @@ export const Home: React.FC = () => {
         </div>
       </div>
       <div>
-        <FeaturedPrintsSection/>
+        <FeaturedPrintsSection />
       </div>
     </div>
   );
