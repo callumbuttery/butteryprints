@@ -1,6 +1,8 @@
 import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/FeaturedPrintsSection";
 import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
 
+import logo from '../assets/logos/Stag logo_B1.png'
+
 export const Home: React.FC = () => {
   return (
     <div>
@@ -9,14 +11,9 @@ export const Home: React.FC = () => {
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
-            className="absolute left-16 lg:left-48 top-64 text-4xl w-full max-lg:text-3xl font-montserrat"
+            className="text-4xl w-full max-lg:text-3xl font-montserrat"
           >
-            <h1 className="tracking-widest text-gray-200 drop-shadow-2xl font-bold">
-              Callum Buttery
-            </h1>
-            <h2 className="mt-2 tracking-widest opacity-50 text-gray-200 drop-shadow-2xl">
-              Photographer
-            </h2>
+            <img src={logo} className=""/>
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0">
