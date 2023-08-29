@@ -10,6 +10,8 @@ import { PortfolioHome } from './views/portfolios/PortfolioHome'
 import { PortfolioWildlife } from "./views/portfolios/PortfolioWildlife";
 import { PortfolioLandscape } from "./views/portfolios/PortfolioLandscapes";
 
+import { Lockscreen } from "./views/Lockscreen";
+
 import { Prints } from './views/Prints'
 import { Navbar } from "./components/Nav/Nav";
 import { Footer } from "./components/Nav/Footer";
@@ -25,14 +27,14 @@ function App() {
     <div className="App">
       <Router>
         <ScrollToTop />
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/portfolio" element={<PortfolioHome />} />
-          <Route path="/portfolio/wildlife" element={<PortfolioWildlife />} />
-          <Route path="/portfolio/landscapes" element={<PortfolioLandscape />} />
-          <Route path="/prints" element={<Prints />} />
+          <Route path="/" element={<Lockscreen />} />
+          <Route path="/about" element={<Lockscreen />} />
+          <Route path="/portfolio" element={<Lockscreen />} />
+          <Route path="/portfolio/wildlife" element={<Lockscreen />} />
+          <Route path="/portfolio/landscapes" element={<Lockscreen />} />
+          <Route path="/prints" element={<Lockscreen />} />
         </Routes>
       </Router>
       <Footer />
