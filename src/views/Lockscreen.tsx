@@ -1,13 +1,12 @@
-import transparentLogo from "../assets/logos/blue-dave-transparent.png";
-
 export const Lockscreen: React.FC = () => {
   return (
-    <div className="flex h-screen bg-[#2f2f2f]">
-      <div className="m-auto">
-        <img src={transparentLogo} className="h-72 max-lg:h-48" />
-        <div className="text-6xl font-montserrat font mt-32 tracking-widest text-white max-lg:text-4xl">
-          COMING SOON
-        </div>
+    <div className="h-screen bg-[url('assets/logos/Logo-background.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="absolute bottom-0 left-0 right-0 top-96 grid place-items-center text-6xl pt-32 font-montserrat font tracking-widest text-white max-lg:text-4xl"
+      >
+        COMING SOON
       </div>
     </div>
   );
