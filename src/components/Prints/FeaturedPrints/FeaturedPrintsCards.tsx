@@ -47,7 +47,7 @@ export const FeaturedPrintsCards: React.FC = () => {
               type="button"
               className="bg-transparent text-black mt-10 text-sm px-1 py-0.5 border border-gray-400 hover:scale-125 font-montserrat font-bold"
             >
-              View now
+              COMING SOON
             </button>
           </div>
         </div>
