@@ -1,8 +1,6 @@
 import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/FeaturedPrintsSection";
 import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
 
-import logo from '../assets/logos/Stag logo_B1.png'
-
 export const Home: React.FC = () => {
   return (
     <div>
@@ -13,7 +11,6 @@ export const Home: React.FC = () => {
             data-aos-duration="1000"
             className="text-4xl w-full max-lg:text-3xl font-montserrat"
           >
-            <img src={logo} className=""/>
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-0">
