@@ -37,7 +37,7 @@ function App() {
           <Route path="/prints" element={<Lockscreen />} />
         </Routes>
       </Router>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
