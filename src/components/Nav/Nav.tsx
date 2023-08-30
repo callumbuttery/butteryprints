@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
       <nav className="bg-transparent h-24 px-2 sm:px-4 py-8 fixed w-full z-20 top-0 left-0 border-b border-transparent">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <img className="h-16" src={logo}/>
+            <img className="w-32" src={logo}/>
             <button
               className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-gray-500 block lg:hidden outline-none focus:outline-none"
               type="button"
