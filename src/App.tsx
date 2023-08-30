@@ -27,14 +27,14 @@ function App() {
     <div className="App">
       <Router>
         <ScrollToTop />
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Lockscreen />} />
-          <Route path="/about" element={<Lockscreen />} />
-          <Route path="/portfolio" element={<Lockscreen />} />
-          <Route path="/portfolio/wildlife" element={<Lockscreen />} />
-          <Route path="/portfolio/landscapes" element={<Lockscreen />} />
-          <Route path="/prints" element={<Lockscreen />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<PortfolioHome />} />
+          <Route path="/portfolio/wildlife" element={<PortfolioWildlife />} />
+          <Route path="/portfolio/landscapes" element={<PortfolioLandscape />} />
+          <Route path="/prints" element={<Prints />} />
         </Routes>
       </Router>
       <Footer />
