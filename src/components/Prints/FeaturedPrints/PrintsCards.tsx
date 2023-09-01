@@ -12,7 +12,7 @@ interface printsObj {
 
 type printsType = printsObj[]
 
-export const FeaturedPrintsCards: React.FC = () => {
+export const PrintsCards: React.FC = () => {
   const printsList: printsType = [
     {
       name: "Kai The Kingfisher ~ 2023",

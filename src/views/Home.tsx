@@ -1,4 +1,4 @@
-import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/FeaturedPrintsSection";
+import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/PrintsSection";
 import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
 
 export const Home: React.FC = () => {

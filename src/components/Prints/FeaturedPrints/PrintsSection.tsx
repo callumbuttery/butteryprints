@@ -1,4 +1,4 @@
-import { FeaturedPrintsCards } from "./FeaturedPrintsCards";
+import { PrintsCards } from "./PrintsCards";
 
 export const FeaturedPrintsSection: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ export const FeaturedPrintsSection: React.FC = () => {
         <hr className="flex justiy-center w-64 mx-auto"></hr>
       </div>
       <div className="flex justify-center">
-        <FeaturedPrintsCards />
+        <PrintsCards />
       </div>
     </div>
   );
