@@ -2,8 +2,18 @@ import kingfisher from "../../../assets/callum_buttery_kingfisher.jpg";
 import roedeer from "../../../assets/callum_buttery_roe_deer.jpg";
 import fox from "../../../assets/callum_buttery_fox.jpg";
 
+import { useLocation } from "react-router-dom";
+
+interface printsObj {
+  name: string,
+  src: string,
+  description: string,
+}
+
+type printsType = printsObj[]
+
 export const FeaturedPrintsCards: React.FC = () => {
-  const prints = [
+  const printsList: printsType = [
     {
       name: "Kai The Kingfisher ~ 2023",
       src: kingfisher,
@@ -22,11 +32,22 @@ export const FeaturedPrintsCards: React.FC = () => {
       description:
         "Everyday for a week, I found myself sitting head to toe in camouflage after work, covered in beasties, waiting outside of a fox hole for Faith & her 5 cubs to appear. The first two days I only caught a 30 second glimpse. Day three however, she put on a show and allowed me to photograph her for 15 minutes before disappearing to looking for dinner.",
     },
+    {
+      name: "Bob",
+      src: fox,
+      description:
+        "Everyday for a week, I found myself sitting head to toe in camouflage after work, covered in beasties, waiting outside of a fox hole for Faith & her 5 cubs to appear. The first two days I only caught a 30 second glimpse. Day three however, she put on a show and allowed me to photograph her for 15 minutes before disappearing to looking for dinner.",
+    },
   ];
+
+  const location = useLocation();
+
+  const printsArray =
+    location?.pathname == "/prints" ? printsList : printsList?.slice(0, 3);
 
   return (
     <div className="pb-10">
-      {prints.map((print, i) => (
+      {printsArray.map((print, i) => (
         <div
           className="mt-24 grid grid-cols-2 max-md:grid-cols-1"
           data-aos="fade-left"
