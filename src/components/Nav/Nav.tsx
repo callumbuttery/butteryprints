@@ -2,16 +2,20 @@ import React from "react";
 import Icon from '@mdi/react';
 //import { mdiMenu } from '@mdi/js';
 //<Icon path={mdiMenu} color='black' size={1.5}/>
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from '../../assets/logos/blue-dave-transparent.png'
 
 export const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const location = useLocation();
+
   return (
       <nav className="bg-transparent h-24 px-2 sm:px-4 py-8 fixed w-full z-20 top-0 left-0 border-b border-transparent">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <img className="w-32" src={logo}/>
+            { !location.pathname.includes('/prints') &&
+              <img className="w-32" src={logo}/>
+            }
             <button
               className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-gray-500 block lg:hidden outline-none focus:outline-none"
               type="button"
