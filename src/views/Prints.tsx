@@ -1,9 +1,13 @@
+import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
+
 export const Prints: React.FC = () => {
-    return (
-        <div className="flex justify-center h-screen bg-[url('assets/callum_buttery_fox.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
-            <h1 className="flex justify-center items-center tracking-widest text-6xl font-monsterret font-montserrat font-bold mb-32 hover:text-white max-sm:text-4xl">
-                COMING SOON
-            </h1>
+  return (
+    <div>
+      <div className="flex justify-center h-screen bg-[url('assets/logos/3D-extended.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+        <div className="absolute inset-x-0 bottom-20">
+            <ScrollAnimator />
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
