@@ -5,15 +5,16 @@ import Icon from "@mdi/react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logos/blue-dave-transparent.png";
 
+import { pathFinder } from "../../helpers/pathFinder";
+
 export const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
-  const location = useLocation();
 
   return (
     <nav className="bg-transparent h-24 px-2 sm:px-4 py-8 fixed w-full z-20 top-0 left-0 border-b border-transparent">
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-          {!location.pathname.includes("/prints") && (
+          {!pathFinder("/prints") && (
             <img className="w-32" src={logo} />
           )}
           <button

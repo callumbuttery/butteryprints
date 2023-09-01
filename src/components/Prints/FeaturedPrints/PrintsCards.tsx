@@ -2,7 +2,7 @@ import kingfisher from "../../../assets/callum_buttery_kingfisher.jpg";
 import roedeer from "../../../assets/callum_buttery_roe_deer.jpg";
 import fox from "../../../assets/callum_buttery_fox.jpg";
 
-import { useLocation } from "react-router-dom";
+import { pathFinder } from "../../../helpers/pathFinder";
 
 interface printsObj {
   name: string,
@@ -40,10 +40,8 @@ export const PrintsCards: React.FC = () => {
     },
   ];
 
-  const location = useLocation();
-
   const printsArray =
-    location?.pathname == "/prints" ? printsList : printsList?.slice(0, 3);
+  pathFinder("/prints") ? printsList : printsList?.slice(0, 3);
 
   return (
     <div className="pb-10">
