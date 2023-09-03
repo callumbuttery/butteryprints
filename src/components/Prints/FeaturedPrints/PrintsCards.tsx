@@ -2,6 +2,7 @@ import kingfisher from "../../../assets/callum_buttery_kingfisher.jpg";
 import roedeer from "../../../assets/callum_buttery_roe_deer.jpg";
 import fox from "../../../assets/callum_buttery_fox.jpg";
 import headtilt1 from "../../../assets/portfolio/wildlife/headtilt2.jpg";
+import Dave from '../../../assets/portfolio/wildlife/IMG_9098-AI.jpg'
 
 import { pathFinder } from "../../../helpers/pathFinder";
 
@@ -16,6 +17,13 @@ type printsType = printsObj[];
 
 export const PrintsCards: React.FC = () => {
   const printsList: printsType = [
+    {
+      name: "Dave The Deer ~ 2018",
+      src: Dave,
+      orientation: "portrait",
+      description:
+        "My favourite picture of my collection & one of the most memorable experiences of my life. A rare day off work in January, I took a drive to what is now my favourite place on the planet, Glen Coe. After 2 and a a half hours of driving, I took a turn off on to a single track road towards Loch Etive, as I rounded the corner, I saw this chap standing and watching a few meters from the roadside. I pulled up and got out, much to my surprise he stuck around for an hour. No car nose, people or anything to distract, just myself, Dave & the beautiful valley of Glen Etive.",
+    },
     {
       name: "Kai The Kingfisher ~ 2023",
       src: kingfisher,
@@ -61,13 +69,13 @@ export const PrintsCards: React.FC = () => {
         >
           <img
             src={print.src}
-            className={`h-80 rounded-lg drop-shadow-xl hover:scale-125 pointer-events-none max-md:mb-5 max-md:h-72 mx-auto ${print.orientation == 'landscape' ? 'mr-10' : ''}`}
+            className={`rounded-lg drop-shadow-xl hover:scale-125 pointer-events-none max-md:mb-5 max-md:h-72 mx-auto ${print.orientation === 'landscape' ? 'mr-10 h-80 ' : 'h-96'}`}
           />
           <div className="inline-block">
             <p className="font-bold font-montserrat text-lg">{print.name}</p>
             <hr className="bg-gray-100 mt-5 mb-5" />
             <p className="max-w-sm font-montserrat font-bold text-sm">
-              {print?.description}
+              {print?.description || 'Details coming soon'}
             </p>
             <button
               type="button"
