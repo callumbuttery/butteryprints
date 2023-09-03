@@ -24,8 +24,6 @@ export const PortfolioHome: React.FC = () => {
         {portfolios.map((portfolio, i) => (
           <div
             className="cursor-pointer mx-auto"
-            data-aos="fade-down"
-            data-aos-duration="1000"
             onClick={() => navigate(portfolio.navigate)}
             key={i}
           >

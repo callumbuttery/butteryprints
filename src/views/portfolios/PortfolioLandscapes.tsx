@@ -67,8 +67,6 @@ export const PortfolioLandscape: React.FC = () => {
     <div className="mt-48 flex justify-center">
       <div
         className="grid grid-cols-4 gap-2 max-lg:grid-cols-2 max-md:grid-cols-1"
-        data-aos="fade-up"
-        data-aos-duration="1000"
       >
         {images.map((image, i) => (
           <img className="h-96 flex justify-center mx-auto pointer-events-none" src={image.src} key={i} />

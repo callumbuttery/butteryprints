@@ -5,8 +5,7 @@ import headshot3 from "../../assets/headshots/unnamed.jpg";
 export const StoryCard: React.FC = () => {
   return (
     <div className="">
-      <div className="grid grid-cols-2 mt-32 max-w-4xl mx-auto max-md:grid-cols-1" data-aos="fade-left"
-        data-aos-duration="1000">
+      <div className="grid grid-cols-2 mt-32 max-w-4xl mx-auto max-md:grid-cols-1">
         <img src={headshot1} className="h-96 mr-10 rounded drop-shadow-2xl pointer-events-none max-md:mx-auto" />
         <div className="ml-10 inline-block max-w-2xl text-blue-500 max-md:ml-0">
           <div className="text-4xl font-montserrat text-black max-md:text-2xl max-md:mx-auto max-md:text-center">Where it all began...</div>
