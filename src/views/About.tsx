@@ -5,7 +5,7 @@ import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
 export const About: React.FC = () => {
   return (
     <div>
-      <div className="h-screen bg-[url('assets/IMG_9378-ai-2.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+      <div className="h-screen bg-[url('assets/IMG_9378-ai-2.jpg')] bg-no-repeat bg-cover bg-center">
         <div className="relative h-32 w-10/12 ...">
           <div
             data-aos="fade-up"

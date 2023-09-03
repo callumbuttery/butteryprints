@@ -1,6 +1,6 @@
 export const Lockscreen: React.FC = () => {
   return (
-    <div className="h-screen bg-[url('assets/logos/3D-extended.jpg')] bg-no-repeat bg-cover bg-center bg-fixed">
+    <div className="h-screen bg-[url('assets/logos/3D-extended.jpg')] bg-no-repeat bg-cover bg-center">
       <div
         data-aos="fade-up"
         data-aos-duration="1000"
