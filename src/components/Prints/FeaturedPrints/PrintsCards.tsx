@@ -61,7 +61,7 @@ export const PrintsCards: React.FC = () => {
         >
           <img
             src={print.src}
-            className={`h-72 rounded-lg drop-shadow-xl hover:scale-125 pointer-events-none max-md:mb-5 mx-auto ${print.orientation == 'landscape' ? 'mr-10' : ''}`}
+            className={`h-80 rounded-lg drop-shadow-xl hover:scale-125 pointer-events-none max-md:mb-5 mx-auto ${print.orientation == 'landscape' ? 'mr-10' : ''}`}
           />
           <div className="inline-block">
             <p className="font-bold font-montserrat text-lg">{print.name}</p>
