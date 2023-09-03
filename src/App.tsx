@@ -35,7 +35,7 @@ function App() {
           <Route path="/prints" element={<Prints />} />
         </Routes>
       </Router>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
