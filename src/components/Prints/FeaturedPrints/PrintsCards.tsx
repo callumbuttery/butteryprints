@@ -1,8 +1,19 @@
+// ----- WILDLIFE ----- //
 import kingfisher from "../../../assets/callum_buttery_kingfisher.jpg";
 import roedeer from "../../../assets/callum_buttery_roe_deer.jpg";
 import fox from "../../../assets/callum_buttery_fox.jpg";
 import headtilt1 from "../../../assets/portfolio/wildlife/headtilt2.jpg";
 import Dave from '../../../assets/portfolio/wildlife/IMG_9098-AI.jpg'
+
+// ----- LANDSCAPES ----- //
+import bridge2 from '../../../assets/portfolio/landscapes/bridge2.jpg'
+import pulpit1 from '../../../assets/portfolio/landscapes/pulpit1.jpg'
+import deanvillage1 from '../../../assets/portfolio/landscapes/deanvillage1.jpg'
+import falls1 from '../../../assets/portfolio/landscapes/falls1.jpg'
+import chatel1 from '../../../assets/portfolio/landscapes/chatel1.jpg'
+import waterfall1 from '../../../assets/portfolio/landscapes/waterfall1.jpg'
+import greymares1 from '../../../assets/portfolio/landscapes/greymares1.jpg'
+import chatel2 from '../../../assets/portfolio/landscapes/chatel2.jpg'
 
 import { pathFinder } from "../../../helpers/pathFinder";
 
@@ -51,6 +62,54 @@ export const PrintsCards: React.FC = () => {
       orientation: "Portrait",
       description:
         "The day I had my closest encounters with Roe Deer. I found myself out one afternoon in my usual spot for finding Roe Deer, but never did I think I'd be this lucky. The wind, infact all conditions, were perfect, I crept my way from one end of a narrow woodland to the field on the other side, before spotting this Juvenile & its mother grazing their way up towards me. After a short wait, the two got within 6-8 meters, Although the Roe is looking at me in the picture, I went undetected & the pair went on about their day.",
+    },
+    {
+      name: "Forth Rail Bridge",
+      src: bridge2,
+      orientation: "Portrait",
+      description: "",
+    },
+    {
+      name: "The Devils Pulpit",
+      src: pulpit1,
+      orientation: "Portrait",
+      description: "",
+    },
+    {
+      name: "Dean Village, Edinburgh",
+      src: deanvillage1,
+      orientation: "Portrait",
+      description: "",
+    },
+    {
+      name: "Falls of The Clyde, Lanarkshire",
+      src: falls1,
+      orientation: "Portrait",
+      description: "",
+    },
+    {
+      name: "Chatelherault, Lanarkshire",
+      src: chatel1,
+      orientation: "Portrait",
+      description: "",
+    },
+    {
+      name: "Glenburn Paisley",
+      src: waterfall1,
+      orientation: "Portrait",
+      description: "",
+    },
+    {
+      name: "Grey Mares Trail, Moffat",
+      src: greymares1,
+      orientation: "Portrait",
+      description: "",
+    },
+    {
+      name: "Chatelherault, Lanarkshire",
+      src: chatel2,
+      orientation: "Portrait",
+      description: "",
     },
   ];
 
