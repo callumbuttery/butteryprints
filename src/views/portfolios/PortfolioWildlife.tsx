@@ -4,7 +4,6 @@ import headtiltRoe2 from "../../assets/portfolio/wildlife/headtilt2.jpg";
 import buzzard1 from "../../assets/portfolio/wildlife/IMG_9348-Edit-4x5.jpg";
 import roeTongue from "../../assets/portfolio/wildlife/IMG_9519-Edit-brigten-gigapixel-standard-scale-2_00x.jpg";
 import owlets1 from "../../assets/portfolio/wildlife/IMG_9773.jpg";
-import stag1 from "../../assets/portfolio/wildlife/IMG-2712.jpg";
 import kingfisher1 from "../../assets/portfolio/wildlife/kingfisher-crop.jpg";
 
 export const PortfolioWildlife: React.FC = () => {
@@ -23,9 +22,6 @@ export const PortfolioWildlife: React.FC = () => {
     },
     {
       src: owlets1,
-    },
-    {
-      src: stag1,
     },
     {
       src: kingfisher1,
