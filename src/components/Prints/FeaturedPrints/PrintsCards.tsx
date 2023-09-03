@@ -38,11 +38,11 @@ export const PrintsCards: React.FC = () => {
         "Everyday for a week, I found myself sitting head to toe in camouflage after work, covered in beasties, waiting outside of a fox hole for Faith & her 5 cubs to appear. The first two days I only caught a 30 second glimpse. Day three however, she put on a show and allowed me to photograph her for 15 minutes before disappearing to looking for dinner.",
     },
     {
-      name: "Bob",
+      name: "Rose the Roe ~ 2022",
       src: headtilt1,
       orientation: "Portrait",
       description:
-        "Everyday for a week, I found myself sitting head to toe in camouflage after work, covered in beasties, waiting outside of a fox hole for Faith & her 5 cubs to appear. The first two days I only caught a 30 second glimpse. Day three however, she put on a show and allowed me to photograph her for 15 minutes before disappearing to looking for dinner.",
+        "The day I had my closest encounters with Roe Deer. I found myself out one afternoon in my usual spot for finding Roe Deer, but never did I think I'd be this lucky. The wind, infact all conditions, were perfect, I crept my way from one end of a narrow woodland to the field on the other side, before spotting this Juvenile & its mother grazing their way up towards me. After a short wait, the two got within 6-8 meters, Although the Roe is looking at me in the picture, I went undetected & the pair went on about their day.",
     },
   ];
 
