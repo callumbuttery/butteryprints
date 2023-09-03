@@ -10,8 +10,6 @@ import { PortfolioHome } from './views/portfolios/PortfolioHome'
 import { PortfolioWildlife } from "./views/portfolios/PortfolioWildlife";
 import { PortfolioLandscape } from "./views/portfolios/PortfolioLandscapes";
 
-import { Lockscreen } from "./views/Lockscreen";
-
 import { Prints } from './views/Prints'
 import { Navbar } from "./components/Nav/Nav";
 import { Footer } from "./components/Nav/Footer";
