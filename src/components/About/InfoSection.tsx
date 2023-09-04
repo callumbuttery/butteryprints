@@ -7,5 +7,6 @@ export const InfoSection: React.FC = () => {
             <hr className="flex justify-center w-72 mx-auto"/>
             <StoryCard />
         </div>
+        
     )
 }
