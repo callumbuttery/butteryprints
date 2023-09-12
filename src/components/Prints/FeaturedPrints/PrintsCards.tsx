@@ -16,12 +16,14 @@ import greymares1 from '../../../assets/portfolio/landscapes/greymares1.jpg'
 import chatel2 from '../../../assets/portfolio/landscapes/chatel2.jpg'
 
 import { pathFinder } from "../../../helpers/pathFinder";
+import { Link } from "react-router-dom";
 
 interface printsObj {
   name: string;
   src: string;
   orientation: string;
   description: string;
+  id: number;
 }
 
 type printsType = printsObj[];
@@ -34,6 +36,7 @@ export const PrintsCards: React.FC = () => {
       orientation: "portrait",
       description:
         "My favourite picture of my collection & one of the most memorable experiences of my life. A rare day off work in January, I took a drive to what is now my favourite place on the planet, Glen Coe. After 2 and a a half hours of driving, I took a turn off on to a single track road towards Loch Etive, as I rounded the corner, I saw this chap standing and watching a few meters from the roadside. I pulled up and got out, much to my surprise he stuck around for an hour. No car nose, people or anything to distract, just myself, Dave & the beautiful valley of Glen Etive.",
+      id: 1,
     },
     {
       name: "Kai The Kingfisher ~ 2023",
@@ -41,6 +44,7 @@ export const PrintsCards: React.FC = () => {
       orientation: "landscape",
       description:
         "During high water on the River Clyde, this Kingfisher moves in land on the search for a food source. On a cold crisp January morning, sitting in a hide, I had the pleaure of spectating this kingfisher diving in and out of the water for several hours.",
+      id: 2
     },
     {
       name: "Robert The Roe ~ 2021",
@@ -48,6 +52,7 @@ export const PrintsCards: React.FC = () => {
       orientation: "landscape",
       description:
         "Taken during the 2021 Roe Deer Rut. I found on the edge of an open meadow, stuck between 3 Roe Bucks chasing each other around for the right to Doe's. This Roe won the battle before posing for his victory photograph.",
+      id: 3
     },
     {
       name: "Faith the Fox ~ 2023",
@@ -55,6 +60,7 @@ export const PrintsCards: React.FC = () => {
       orientation: "landscape",
       description:
         "Everyday for a week, I found myself sitting head to toe in camouflage after work, covered in beasties, waiting outside of a fox hole for Faith & her 5 cubs to appear. The first two days I only caught a 30 second glimpse. Day three however, she put on a show and allowed me to photograph her for 15 minutes before disappearing to looking for dinner.",
+      id: 4
     },
     {
       name: "Rose the Roe ~ 2022",
@@ -62,54 +68,63 @@ export const PrintsCards: React.FC = () => {
       orientation: "Portrait",
       description:
         "The day I had my closest encounters with Roe Deer. I found myself out one afternoon in my usual spot for finding Roe Deer, but never did I think I'd be this lucky. The wind, infact all conditions, were perfect, I crept my way from one end of a narrow woodland to the field on the other side, before spotting this Juvenile & its mother grazing their way up towards me. After a short wait, the two got within 6-8 meters, Although the Roe is looking at me in the picture, I went undetected & the pair went on about their day.",
+      id: 5
     },
     {
       name: "Forth Rail Bridge",
       src: bridge2,
       orientation: "Portrait",
       description: "",
+      id: 6
     },
     {
       name: "The Devils Pulpit",
       src: pulpit1,
       orientation: "Portrait",
       description: "",
+      id: 7
     },
     {
       name: "Dean Village, Edinburgh",
       src: deanvillage1,
       orientation: "Portrait",
       description: "",
+      id: 8
     },
     {
       name: "Falls of The Clyde, Lanarkshire",
       src: falls1,
       orientation: "Portrait",
       description: "",
+      id: 9
     },
     {
       name: "Chatelherault, Lanarkshire",
       src: chatel1,
       orientation: "Portrait",
       description: "",
+      id: 10,
     },
     {
       name: "Glenburn Paisley",
       src: waterfall1,
       orientation: "Portrait",
       description: "",
+      id: 11,
     },
     {
       name: "Grey Mares Trail, Moffat",
       src: greymares1,
       orientation: "Portrait",
       description: "",
+      id: 12
     },
     {
       name: "Chatelherault, Lanarkshire",
       src: chatel2,
       orientation: "Portrait",
       description: "",
+      id: 13
     },
   ];
 
@@ -134,12 +149,13 @@ export const PrintsCards: React.FC = () => {
             <p className="max-w-sm font-montserrat font-bold text-sm max-md:p-10 max-md:text-center">
               {print?.description || 'Details coming soon'}
             </p>
-            <button
+            <Link
               type="button"
-              className="bg-transparent text-black mt-10 text-sm px-1 py-0.5 border border-gray-400 hover:scale-125 font-montserrat font-bold max-md:text-center max-md:ml-28"
+              to={`/store/${print.id}`}
+              className="bg-transparent rounded pa-1 text-black mt-10 text-sm px-1 py-0.5 border border-gray-400 hover:scale-125 font-montserrat font-bold max-md:text-center max-md:ml-28"
             >
-              COMING SOON
-            </button>
+              View now
+            </Link>
           </div>
         </div>
       ))}

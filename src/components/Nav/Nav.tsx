@@ -1,11 +1,9 @@
 import React from "react";
-import Icon from "@mdi/react";
-//import { mdiMenu } from '@mdi/js';
-//<Icon path={mdiMenu} color='black' size={1.5}/>
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logos/blue-dave-transparent.png";
 
 import { pathFinder } from "../../helpers/pathFinder";
+
 
 export const Navbar: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -20,7 +18,6 @@ export const Navbar: React.FC = () => {
           <button
             className="text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-gray-500 block lg:hidden outline-none focus:outline-none"
             type="button"
-            onClick={() => setNavbarOpen(!navbarOpen)}
           ></button>
         </div>
         <div

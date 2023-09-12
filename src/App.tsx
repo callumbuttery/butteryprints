@@ -13,6 +13,7 @@ import { Prints } from './views/Prints'
 import { Navbar } from "./components/Nav/Nav";
 import { Footer } from "./components/Nav/Footer";
 import { ScrollToTop } from "./components/Nav/ScrollToTop";
+import { Store } from "./views/Store";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route path="/portfolio/wildlife" element={<PortfolioWildlife />} />
           <Route path="/portfolio/landscapes" element={<PortfolioLandscape />} />
           <Route path="/prints" element={<Prints />} />
+          <Route path="/store/:id" element={<Store />} />
         </Routes>
       </Router>
       <Footer />
