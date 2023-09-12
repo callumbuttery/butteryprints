@@ -149,13 +149,12 @@ export const PrintsCards: React.FC = () => {
             <p className="max-w-sm font-montserrat font-bold text-sm max-md:p-10 max-md:text-center">
               {print?.description || 'Details coming soon'}
             </p>
-            <Link
+            <button
               type="button"
-              to={`/store/${print.id}`}
               className="bg-transparent rounded pa-1 text-black mt-10 text-sm px-1 py-0.5 border border-gray-400 hover:scale-125 font-montserrat font-bold max-md:text-center max-md:ml-28"
             >
-              View now
-            </Link>
+              COMING SOON
+            </button>
           </div>
         </div>
       ))}
