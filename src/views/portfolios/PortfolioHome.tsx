@@ -1,5 +1,5 @@
-import landscapePlaceHolder from "../../assets/portfolio/IMG_0243.jpg";
-import wildlifePlaceHolder from "../../assets/portfolio/IMG_9098-AI.jpg";
+import landscapePlaceHolder from "../../assets/placeholders/IMG_0243.jpg";
+import wildlifePlaceHolder from "../../assets/placeholders/IMG_9098-AI.jpg";
 import { useNavigate } from "react-router-dom";
 
 export const PortfolioHome: React.FC = () => {
