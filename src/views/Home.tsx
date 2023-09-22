@@ -1,19 +1,17 @@
 import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/PrintsSection";
 import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
-import printData from '../json/printsData.json'
 import { useEffect, useState } from "react";
-import { printsObj } from "../interfaces/interfaces";
-import { printsType } from "../types/types";
+import { getImageSrc } from "../helpers/imageFinder";
 
 export const Home: React.FC = () => {
   let [background, setBackGround] = useState<string>()
 
   useEffect(() => {
     try{
-      const data = printData.find((value) => value.src.includes('callum_buttery_kingfisher.jpg'))
+      const data = getImageSrc('callum_buttery_kingfisher.jpg')
 
       if(!data) throw new Error('Failed to find background');
-      setBackGround(`${data.src}`);
+      setBackGround(`${data}`);
 
     } catch (e) {
       console.log('Failed to get printData')
