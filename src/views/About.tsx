@@ -1,11 +1,10 @@
-import me from "../assets/me.jpeg";
 import { InfoSection } from "../components/About/InfoSection";
 import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
 
 export const About: React.FC = () => {
   return (
     <div>
-      <div className="h-screen bg-[url('assets/IMG_9378-ai-2.jpg')] bg-no-repeat bg-cover bg-center">
+      <div className="h-screen bg-me-ai bg-no-repeat bg-cover bg-center">
         <div className="relative h-32 w-10/12 ...">
           <div
             className="absolute left-16 lg:left-48 top-64 text-4xl w-2/6 max-lg:text-3xl font-montserrat"

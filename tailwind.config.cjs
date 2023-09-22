@@ -16,6 +16,12 @@ module.exports = {
       fontFamily: {
         montserrat: ["Montserrat"],
       },
+      backgroundImage: {
+        'me-ai': "url('IMG_9378-ai-2.jpg')",
+        'headshot1': "url('/headshots/unnamed.jpg')",
+        'headshot2': "url('/headshots/unnamed (1).jpg')",
+        'headshot3': "url('/headshots/unnamed (2).jpg')",
+      }
     },
   },
   plugins: [],

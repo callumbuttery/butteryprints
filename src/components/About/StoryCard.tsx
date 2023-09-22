@@ -1,6 +1,6 @@
-import headshot1 from "../../assets/headshots/unnamed (1).jpg";
-import headshot2 from "../../assets/headshots/unnamed (2).jpg";
-import headshot3 from "../../assets/headshots/unnamed.jpg";
+import headshot1 from "/headshots/unnamed.jpg";
+import headshot2 from "/headshots/unnamed (1).jpg";
+import headshot3 from "/headshots/unnamed (2).jpg";
 
 export const StoryCard: React.FC = () => {
   return (
