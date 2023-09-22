@@ -1,10 +1,28 @@
 import { FeaturedPrintsSection } from "../components/Prints/FeaturedPrints/PrintsSection";
 import { ScrollAnimator } from "../components/Loading/ScrollAnimation";
+import printData from '../json/printsData.json'
+import { useEffect, useState } from "react";
+import { printsObj } from "../interfaces/interfaces";
+import { printsType } from "../types/types";
 
 export const Home: React.FC = () => {
+  let [background, setBackGround] = useState<string>()
+
+  useEffect(() => {
+    try{
+      const data = printData.find((value) => value.src.includes('callum_buttery_kingfisher.jpg'))
+
+      if(!data) throw new Error('Failed to find background');
+      setBackGround(`${data.src}`);
+
+    } catch (e) {
+      console.log('Failed to get printData')
+    }
+  }, []);
+  
   return (
     <div>
-      <div className="h-screen bg-[url('assets/callum_buttery_kingfisher.jpg')] bg-no-repeat bg-cover bg-center">
+      <div className={`h-screen bg-no-repeat bg-cover bg-center`} style={{ backgroundImage: `url(${background})`}}>
         <div className="relative h-32 w-10/12">
           <div
             className="absolute left-16 lg:left-48 top-96 text-4xl w-full max-lg:text-2xl font-montserrat max-lg:hidden"

@@ -1,32 +1,9 @@
-// ----- WILDLIFE ----- //
-import kingfisher from "../../../assets/callum_buttery_kingfisher.jpg";
-import roedeer from "../../../assets/callum_buttery_roe_deer.jpg";
-import fox from "../../../assets/callum_buttery_fox.jpg";
-import headtilt1 from "../../../assets/portfolio/wildlife/headtilt2.jpg";
-import Dave from '../../../assets/portfolio/wildlife/IMG_9098-AI.jpg'
-
-// ----- LANDSCAPES ----- //
-import bridge2 from '../../../assets/portfolio/landscapes/bridge2.jpg'
-import pulpit1 from '../../../assets/portfolio/landscapes/pulpit1.jpg'
-import deanvillage1 from '../../../assets/portfolio/landscapes/deanvillage1.jpg'
-import falls1 from '../../../assets/portfolio/landscapes/falls1.jpg'
-import chatel1 from '../../../assets/portfolio/landscapes/chatel1.jpg'
-import waterfall1 from '../../../assets/portfolio/landscapes/waterfall1.jpg'
-import greymares1 from '../../../assets/portfolio/landscapes/greymares1.jpg'
-import chatel2 from '../../../assets/portfolio/landscapes/chatel2.jpg'
-
 import { pathFinder } from "../../../helpers/pathFinder";
 import { Link } from "react-router-dom";
 
 import printsData from '../../../json/printsData.json'
 
-interface printsObj {
-  name: string;
-  src: string;
-  orientation: string;
-  description: string;
-  id: number;
-}
+import { printsObj } from "../../../interfaces/interfaces";
 
 type printsType = printsObj[];
 
